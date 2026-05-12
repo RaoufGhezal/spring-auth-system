@@ -9,19 +9,14 @@
 clone the repo
 
 ```bash
-git clone your-repo-url
+git clone https://github.com/RaoufGhezal/spring-auth-system
 cd spring-auth-system
 ```
 
 create postgresql container
 
 ```bash
-docker run --name spring-auth-db \
-  -e POSTGRES_DB=spring_auth_db \
-  -e POSTGRES_USER=postgres \
-  -e POSTGRES_PASSWORD=postgres \
-  -p 5432:5432 \
-  -d postgres
+docker run --name spring-auth-db -e POSTGRES_DB=spring_auth_db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
 ```
 
 open client api file
